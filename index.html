@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KTET English 2026 Prep</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7fb;--sf:#fff;--tx:#1d2433;--mu:#5d6679;--ac:#2f5bea;--ok:#1a8a4a;--no:#c63a3a;--bd:#dde1ea}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--sf:#1b202b;--tx:#e8ebf2;--mu:#98a1b5;--ac:#7a9bff;--ok:#4cc383;--no:#ff7b7b;--bd:#2e3544}}
+:root[data-theme="dark"]{--bg:#12151c;--sf:#1b202b;--tx:#e8ebf2;--mu:#98a1b5;--ac:#7a9bff;--ok:#4cc383;--no:#ff7b7b;--bd:#2e3544}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.3rem;margin:0 0 2px}
+.sub{color:var(--mu);font-size:.85rem;margin-bottom:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+button,select{font:inherit;color:var(--tx);background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:8px 14px;cursor:pointer}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:10px 0}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,var(--sf))}
+.opt.no{border-color:var(--no);background:color-mix(in srgb,var(--no) 15%,var(--sf))}
+.exp{color:var(--mu);font-size:.92rem;margin-top:8px}
+.fc{min-height:150px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.3rem;cursor:pointer}
+.tag{font-size:.75rem;color:var(--mu)}
+details{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:10px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+li{margin:4px 0}
+.bar{height:6px;background:var(--bd);border-radius:4px;overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;background:var(--ac)}
+</style></head><body><main>
+<h1>KTET English 2026 Prep</h1>
+<div class="sub">Based on Entri grammar tips, K-TET Cat 3 question bank &amp; final lap revision</div>
+<div class="row" id="cat"></div>
+<div class="row" id="tabs"></div>
+<div id="view"></div>
+</main>
+<script>
+var Q=[
+// [question, options, answerIndex, explanation, topic, cats]
+["The initial sound of ‘ship’ is a:",["plosive","fricative","nasal","affricate"],1,"/ʃ/ is a fricative; /tʃ/ in ‘chair’ is an affricate.","Phonetics","23"],
+["A sound produced with both lips is:",["bilabial","dental","velar","glottal"],0,"p, b, m are bilabial.","Phonetics","23"],
+["p, t, k are:",["nasals","plosives","fricatives","affricates"],1,"Stops released with a burst of air are plosives.","Phonetics","23"],
+["m, n and the final sound of ‘sing’ are:",["nasals","plosives","laterals","glides"],0,"Air passes through the nose.","Phonetics","23"],
+["The scientific study of speech sounds:",["Phonetics","Semantics","Syntax","Morphology"],0,"Phonetics deals with pronunciation (compare Q150 of the Cat II paper).","Phonetics","23"],
+["IPA stands for:",["International Phonetic Alphabet","Indian Phonetic Association","International Pronunciation Aid","Internal Phonetic Alphabet"],0,"IPA symbols represent speech sounds.","Phonetics","23"],
+["Prominence given to one syllable in a word is:",["intonation","word stress","rhythm","juncture"],1,"Word stress; intonation is the pitch pattern of a sentence.","Phonetics","23"],
+["Neither he nor I ___ present.",["is","are","am","were"],2,"With neither…nor the verb agrees with the nearer subject (I).","Grammar","23"],
+["One of my friends ___ a doctor.",["are","is","were","have"],1,"‘One of’ takes a singular verb.","Grammar","23"],
+["The news ___ true.",["are","were","is","have"],2,"News is an uncountable noun with a singular verb.","Grammar","23"],
+["She sings ___ than her sister.",["good","better","best","well"],1,"Comparative of ‘well’ is ‘better’.","Grammar","23"],
+["Passive of ‘Close the door.’",["Let the door be closed.","The door is closed.","The door was closed.","Door closes."],0,"Imperative passive uses ‘Let … be + V3’.","Grammar","23"],
+["Active form of ‘The letter was written by Ravi.’",["Ravi writes the letter.","Ravi wrote the letter.","Ravi has written the letter.","Ravi was writing the letter."],1,"Simple past passive → simple past active.","Grammar","23"],
+["He said, “I will go.” Reported speech:",["He said that he will go.","He said that he would go.","He said that I would go.","He said that he had gone."],1,"Will → would.","Grammar","23"],
+["He plays ___ guitar.",["a","an","the","no article"],2,"Use ‘the’ with musical instruments.","Grammar","23"],
+["She is married ___ a doctor.",["with","to","by","for"],1,"Married to.","Grammar","23"],
+["The train arrived ___ 5 pm.",["in","on","at","by"],2,"At + clock time.","Grammar","23"],
+["He died ___ cancer.",["from","of","with","by"],1,"Died of a disease.","Grammar","23"],
+["Rarely ___ he go out.",["do","does","did he","is"],1,"Negative adverb at the start causes inversion: Rarely does he go out.","Grammar","23"],
+["Synonym of ‘diligent’:",["lazy","hardworking","careless","rude"],1,"Diligent = hardworking.","Vocabulary","23"],
+["Antonym of ‘transparent’:",["clear","opaque","thin","bright"],1,"Opaque lets no light through.","Vocabulary","23"],
+["A collective noun for fish:",["herd","flock","shoal","pack"],2,"A shoal of fish.","Vocabulary","23"],
+["Plural of ‘man-servant’:",["man-servants","men-servant","men-servants","mans-servants"],2,"Both parts change: men-servants.","Grammar","23"],
+["‘Tintern Abbey’ was written by:",["Keats","Wordsworth","Shelley","Byron"],1,"William Wordsworth.","Literature","3"],
+["‘Ode to a Nightingale’ is by:",["Keats","Coleridge","Tennyson","Browning"],0,"John Keats.","Literature","3"],
+["‘Pride and Prejudice’ is by:",["Jane Austen","Charlotte Brontë","George Eliot","Mary Shelley"],0,"Jane Austen.","Literature","3"],
+["‘Songs of Innocence’ is by:",["Blake","Burns","Gray","Pope"],0,"William Blake.","Literature","3"],
+["‘Oliver Twist’ is by:",["Hardy","Dickens","Thackeray","Scott"],1,"Charles Dickens.","Literature","3"],
+["‘Ulysses’ (the dramatic monologue) is by:",["Tennyson","Browning","Arnold","Eliot"],0,"Alfred Lord Tennyson.","Literature","3"],
+["‘Waiting for Godot’ is by:",["Pinter","Beckett","Osborne","Shaw"],1,"Samuel Beckett.","Literature","3"],
+["‘Gitanjali’ is by:",["Tagore","Naidu","Aurobindo","Ezekiel"],0,"Rabindranath Tagore.","Literature","3"],
+["A language laboratory mainly develops:",["reading only","listening and speaking skills","grammar rules","handwriting"],1,"Audio-based practice of listening and pronunciation.","Pedagogy","3"],
+["A portfolio in assessment is:",["a single test","a collection of a learner’s work over time","a rank list","an oral exam"],1,"Portfolio assessment tracks growth.","Pedagogy","3"],
+["Remedial teaching follows:",["a diagnostic test","a final exam","admission","promotion"],0,"Diagnose first, then remediate.","Pedagogy","3"],
+["The spiral curriculum is associated with:",["Bruner","Skinner","Pavlov","Gardner"],0,"Jerome Bruner (see the 2012 sample question).","Pedagogy","3"],
+["The theory of multiple intelligences was proposed by:",["Howard Gardner","Spearman","Binet","Thorndike"],0,"Gardner’s ‘Frames of Mind’.","Pedagogy","3"],
+["Bloom’s taxonomy was developed by:",["Benjamin Bloom","Jean Piaget","Lev Vygotsky","Robert Gagne"],0,"Benjamin Bloom and colleagues.","Pedagogy","3"],
+["Role play mainly develops:",["communicative skills","spelling","memory of rules","handwriting"],0,"It gives practice in using language in context.","Pedagogy","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q1] An effective teacher handles the classroom by providing activities:",["suitable to the intellectual level of the learners","intended for the talented students only","to students to learn at their own will","considering the special abilities of students only"],0,"Activities should match learners’ intellectual level.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q2] A true statement about mental retardation:",["Most are unable to live normal lives","With special tutoring, they can attain average intelligence","The majority are mildly retarded","Diagnosis is based exclusively on IQ scores"],2,"Most intellectually disabled people fall in the mild category.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q3] According to Bruner, which statement is correct?",["Learning takes place gradually","Each learner passes through fixed intellectual stages","The type of representation used depends on the type of thinking required","Intellectual development follows the same pattern in all individuals"],2,"Bruner’s enactive, iconic and symbolic modes are chosen to suit the task. Fixed stages are Piaget.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q4] After a tone is paired repeatedly with meat powder, salivation to the tone alone is a:",["Unconditioned Stimulus","Unconditioned Response","Conditioned Stimulus","Conditioned Response"],3,"Pavlov: the learned response to the tone is a conditioned response.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q5] An adolescent striving for better performance to achieve his goal is:",["Intrinsically motivated learner","Extrinsically motivated learner","Reward oriented learner","Self directed learner"],0,"Goal-driven effort from within is intrinsic motivation.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q6] Freud believed most personality disturbances are due to:",["Parents’ failure to reinforce healthy behaviour","A poor self-concept from excessive parental demands","Unconscious, unresolved sexual conflicts rooted in childhood experiences","Exposure to unhealthy role models"],2,"Psychoanalytic view: unconscious childhood conflicts.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q7] Priority in the discussion method:",["Adequate class environment facilitating discussion","A turn of debates to the normal discussion","Leave aside the unexpressive students","Keep the discussion at the students’ mental level only"],0,"A supportive environment comes first.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q8] Children with special needs can be handled by:",["Simple learning strategies","Differential learning strategies","Activity oriented learning","Group learning strategies"],1,"Different needs call for differentiated strategies.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q9] Per Piaget, the most appropriate strategy for adolescents:",["Catering to all children as a common group","Providing activity based strategies","Creating challenging situations","Providing ideal learning situations"],2,"Challenging situations promote cognitive conflict and reasoning. Check this against the official key.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Part I, Q10] A delinquent is one who:",["Shows emotionally immature behaviour","Engages in creative activities","Responds to sensitive situations","Does offences and crimes"],3,"Delinquency = anti-social or law-breaking behaviour by the young.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q1] Miracle plays are based on:",["mystery","poverty","war","biblical episodes"],3,"Medieval religious drama drawn from sacred stories. Check this against the official key.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q2] ‘Lake Poets’ refers to:",["Wordsworth, Southey and Coleridge","Wordsworth, Southey and Blake","Wordsworth, Coleridge and Burns","Wordsworth, Coleridge and Shelley"],0,"The Lake District Romantics.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q3] ‘Hermeneutics’ means:",["the art of criticising","the art of interpreting","the art of enjoying","the art of negating"],1,"Hermeneutics = theory of interpretation.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q4] An example of ‘Indian English’:",["Where have you come from?","Where are you coming from?","Where do you come from?","Where are you from?"],1,"Progressive form with a stative sense is typical of Indian English.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q5] Noun phrase in ‘All the books in the library were burnt.’",["books","library","all the books in the library","all the books"],2,"The head noun with its modifiers forms the whole phrase.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q6] Drilling and practice are associated with:",["behaviourism","cognitivism","constructivism","neurolinguistic programming"],0,"Behaviourist habit formation.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q7] ‘Information gap’ is related to:",["communicative approach","intelligence quotient","structural method","dictionary use"],0,"A core CLT activity.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q8] A diagnostic test is administered:",["after remedial teaching","at the end of teaching","before remedial teaching","when a student prepares for a test"],2,"Diagnosis identifies difficulties before remediation.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q9] LAD (Language Acquisition Device) was coined by:",["Piaget","Bruner","Vygotsky","Chomsky"],3,"Noam Chomsky.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Lang I English, Q10] A teacher gives many examples and from them draws out the concept of adverbs. The method is:",["inductive","deductive","systematic","structural"],0,"Examples first, rule afterwards = inductive.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q1, river journey passage] The atmosphere of the paragraph is best summed up as:",["a situation of fear","an atmosphere of sudden action","a note of alarm as the sun sets","a sense of disturbance and its effect on the creatures"],3,"The passing expedition disturbs natives, boys and cattle in a still, hot scene. Check this against the official key.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q2, river journey passage] ‘Natives… scuttled like spiders’ is an example of:",["synecdoche","metaphor","simile","personification"],2,"Comparison using ‘like’.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q3, river journey passage] Who are ‘they’ in ‘until they had passed’?",["natives","cars","spiders","sheets of vegetation"],1,"The natives waited until the cars had passed.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q4] A synonym of ‘precipitous’:",["steep","sticky","secret","selective"],0,"Precipitous = very steep.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q5] In ‘we came upon walking natives’, ‘walking’ is a:",["past participle","gerund","present participle","verb"],2,"It modifies ‘natives’ as a participial adjective.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q6] Find the correct sentence:",["Jessy is the only one of the students who talk","Jessy is one of the students who talks in class","Jessy is the only one of the students who talks","Jessy is only one of the student who talk"],2,"‘The only one’ is the subject of ‘who’, so the verb is singular.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q7] Which conveys disagreement?",["We back your opinion","We second your opinion","We absolutely agree with you","We are afraid we can’t accept"],3,"A polite refusal.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q8] Which is spelt correctly?",["separate","accomodation","pronounciation","embarrassment"],0,"‘Separate’ is correct; accommodation and pronunciation are the right spellings. Option D may also look correct in the scan, so check the original paper.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q9] Mrs Jancy is sick ---- internal squabbles in her office.",["at","about","of","with"],2,"Sick of = fed up with.","Previous Year","3"],
+["[K-TET 2012 sample, Cat III, Subject Specific English, Q10] ‘He cannot put up with her indecency.’ ‘Put up with’ means:",["conceive","imitate","tolerate","manipulate"],2,"Put up with = tolerate.","Previous Year","3"],
+["[Cat II, Part 3, Q121, garbage passage] Garbage originates from:",["building materials","polluted water and soil","compost pits at convenient locations","used paper, tiffin packings, plastic bags and fallen leaves"],3,"The passage lists used paper, tiffin packings, plastic bags, wrappers, bottle caps and fallen leaves.","Previous Year","2"],
+["[Cat II, Part 3, Q122, garbage passage] Garbage can create problems to mankind by:",["spreading fragrance around","spreading several diseases","supporting recycling centres","supporting junk dealers"],1,"Garbage makes premises ugly and unkempt and breeds diseases.","Previous Year","2"],
+["[Cat II, Part 3, Q123, garbage passage] What happens to disposed materials at recycling centres?",["It is recycled for reuse","It is thrown away","It is sold to the rag pickers","It is dumped on to the ground"],0,"Paper, metals and glass are recycled and reused.","Previous Year","2"],
+["[Cat II, Part 3, Q124, garbage passage] Fallen leaves from trees are useful because they:",["add to the trash in garbage","enrich water quality","enrich soil fertility","beautify landscape"],2,"Organic matter such as leaves can enrich soil fertility.","Previous Year","2"],
+["[Cat II, Part 3, Q125, garbage passage] The word ‘unkempt’ in the passage means:",["appealing","untidy","beautiful","hygienic"],1,"Unkempt = untidy, not well cared for.","Previous Year","2"],
+["[Cat II, Part 3, Q126, garbage passage] Which is NOT correct about a compost pit?",["Refuse is placed with layers of soil and occasional water","It contributes to useful fertilizer","It prevents pollution","It helps in burning away plastic wastes"],3,"A compost pit decomposes organic waste and avoids burning; it is not for burning plastic.","Previous Year","2"],
+["[Cat II, Part 3, Q127] The artist always led a strange and secretive life. Best replacement for the underlined words:",["massive","acute","mysterious","devastating"],2,"Strange and secretive = mysterious.","Previous Year","2"],
+["[Cat II, Part 3, Q128] The fireman extinguished the fire quickly. Phrasal verb that replaces ‘extinguished’:",["put out","put in","put forward","put off"],0,"Put out a fire = extinguish it.","Previous Year","2"],
+["[Cat II, Part 3, Q129] Passive of ‘Has someone taken my book?’",["Has my book been taken by someone?","Will my book be taken?","Has my book being taken by someone?","Is my book taken?"],0,"Present perfect passive: has/have + been + V3.","Previous Year","2"],
+["[Cat II, Part 3, Q130] The name adopted by an author in his writings is a ___.",["nickname","nomenclature","title","pseudonym"],3,"Pseudonym = pen name.","Previous Year","2"],
+["[Cat II, Part 3, Q131] Krishna ___ nothing at all these days.",["is not doing","didn’t do","doing","is doing"],3,"‘Nothing’ is already negative, and ‘these days’ needs present continuous: is doing.","Previous Year","2"],
+["[Cat II, Part 3, Q132] It is a sunny day. Let’s go for a ride, ___?",["should we?","shall we?","would we?","will we?"],1,"‘Let’s’ takes the tag ‘shall we?’.","Previous Year","2"],
+["[Cat II, Part 3, Q133] ‘Can you give me a hand?’ means he is asking for ___.",["praise","money","hand","help"],3,"Idiom: give a hand = help.","Previous Year","2"],
+["[Cat II, Part 3, Q134] Do you ___ eat ice cream? Pick the adverb.",["recently","obviously","usually","certainly"],2,"An adverb of frequency fits a habitual question.","Previous Year","2"],
+["[Cat II, Part 3, Q135] WHO is the ___ for World Health Organisation.",["acronym","synonym","homonym","antonym"],0,"An acronym is formed from initial letters.","Previous Year","2"],
+["[Cat II, Part 3, Q136] Identify the correct sentence:",["He had enough money to lead a comfortable life.","The programme was such boring that I slept.","The daughter is pretty than the mother.","The boy tried hardly to learn maths."],0,"Others are wrong: so boring / prettier / hard.","Previous Year","2"],
+["[Cat II, Part 3, Q137] If I ___ a mistake, I would correct it.",["committing","committed","have committed","had committed"],1,"Second conditional: if + past, would + V1.","Previous Year","2"],
+["[Cat II, Part 3, Q138] There spread a ___ that the match might be postponed.",["rumour","idea","disease","agenda"],0,"A rumour spreads.","Previous Year","2"],
+["[Cat II, Part 3, Q139] We ___ for the bus for over an hour.",["has been waiting","have been waiting","will be waiting","would be waiting"],1,"Present perfect continuous with ‘we’ and ‘for over an hour’.","Previous Year","2"],
+["[Cat II, Part 3, Q140] A pair of socks ___ lying on the sofa.",["are","were","aren’t","is"],3,"‘A pair of’ takes a singular verb.","Previous Year","2"],
+["[Cat II, Part 3, Q141] ‘Stop talking’, said the commander to the boys. Reported speech:",["The commander ordered the boys do not talking.","The commander ordered the boys not to stop talking.","The commander ordered the boys to stop talking.","The commander ordered the boys to talk."],2,"Imperative → ordered + to + V1.","Previous Year","2"],
+["[Cat II, Part 3, Q142] Identify the incorrectly spelt word.",["responsible","permissible","accessible","irresistable"],3,"Correct spelling is irresistible.","Previous Year","2"],
+["[Cat II, Part 3, Q143] The teacher went ___ explaining the various aspects of the topic.",["off","on","about","from"],1,"Went on = continued.","Previous Year","2"],
+["[Cat II, Part 3, Q144] ‘Neither of these computers ___ properly.’",["work","works","working","has work"],1,"Neither (of) takes a singular verb in standard usage.","Previous Year","2"],
+["[Cat II, Part 3, Q145] The mother was happy ___ the prospect of meeting her children.",["from","at","with","for"],1,"Happy at the prospect of.","Previous Year","2"],
+["[Cat II, Part 3, Q146] Inclusive education ___.",["celebrates diversity in classrooms","necessitates finishing the portions on time","calls for compulsory physical education","integrates different disciplines"],0,"Inclusive education welcomes all learners and values diversity.","Previous Year","2"],
+["[Cat II, Part 3, Q147] Reading a text quickly to get a general idea is called:",["Intensive reading","Extensive reading","Skimming","Scanning"],2,"Skimming = gist; scanning = specific details.","Previous Year","2"],
+["[Cat II, Part 3, Q148] The term ‘curriculum’ refers to:",["evaluation process","text-materials to be used in the class","methods of teaching and the content to be taught","overall programme of the school which students experience mostly in the classroom on a day-to-day basis"],3,"Curriculum is the whole planned programme of learning experiences. Check this one against the official key.","Previous Year","2"],
+["[Cat II, Part 3, Q149] Fluency in English can be developed by:",["creating opportunities to use the target language for communication","the teacher talking for most of the time","the teacher being alert in identifying errors and correcting them","allowing students who are not confident to remain quiet"],0,"Fluency grows through meaningful use of the language.","Previous Year","2"],
+["[Cat II, Part 3, Q150] The phonetic aspect in language deals with ___.",["Meaning of words","Pronunciation of words","Spelling of words","Writing of words"],1,"Phonetics studies speech sounds and pronunciation.","Previous Year","2"],
+["[Cat II, Part 2, Q91, Ammayi passage] Ammayi was different from other school teachers because:",["she was arrogant and irritating","she was wealthy and fashionable","she was ready to help others","None of the above"],2,"She always smiled and offered a helping hand to anyone in trouble.","Previous Year","2"],
+["[Cat II, Part 2, Q92, Ammayi passage] Deepthi had ___ at Ammayi’s presence.",["surprise","discontent","enjoyment","pleasure"],1,"Deepthi was irritated and expressed her discontent.","Previous Year","2"],
+["[Cat II, Part 2, Q93, Ammayi passage] A large crowd gathered at home when Ammayi ___.",["passed away","invited them","retired from service","got an award"],0,"The crowd came to pay respects after her death.","Previous Year","2"],
+["[Cat II, Part 2, Q94, Ammayi passage] Ammayi, according to the District Collector, was ___.",["an arrogant lady who was not kind","a proud woman who hated everyone","an unfriendly person who shouted at everyone","a loving person who was kind and compassionate"],3,"He said her life’s message was love, kindness and compassion.","Previous Year","2"],
+["[Cat II, Part 2, Q95, Ammayi passage] ‘My mother was only a mute witness.’ ‘Mute’ means:",["irritant","silent","hesitant","violent"],1,"Mute = silent.","Previous Year","2"],
+["[Cat II, Part 2, Q96] ___ adding sugar to my coffee, I usually add jaggery.",["Because of","But","Instead of","Inspite to"],2,"Instead of = in place of.","Previous Year","2"],
+["[Cat II, Part 2, Q97] Notice, letter, diary, etc. are ___.",["language elements","language units","language discourses","language rules"],2,"These are discourse types (extended pieces of language).","Previous Year","2"],
+["[Cat II, Part 2, Q98] One of the pieces was ___.",["damage","damaging","damages","damaged"],3,"Was + past participle.","Previous Year","2"],
+["[Cat II, Part 2, Q99] Indu’s voice is ___.",["sweeter than that of Chandu’s","sweetest than that of Chandu’s","sweeter to Chandu","sweet than Chandu’s"],0,"Comparative + than.","Previous Year","2"],
+["[Cat II, Part 2, Q100] If you had studied well, ___.",["you could score high marks","you could scoring high marks","you could scored high marks","you could have scored high marks"],3,"Third conditional: if + past perfect, could have + V3.","Previous Year","2"],
+["[Cat II, Part 2, Q101] ‘I could hardly breathe inside the closed chamber.’ This means:",["The chamber was hard.","The speaker could breathe inside the chamber.","The speaker took a deep breath inside the chamber.","The speaker was suffocated inside the chamber."],3,"Hardly = almost not.","Previous Year","2"],
+["[Cat II, Part 2, Q102] I was asked to explain ___.",["how did they do it","how did they done it","how they did it","how did they did it"],2,"Indirect question keeps statement word order.","Previous Year","2"],
+["[Cat II, Part 2, Q103] Many of our friends ___ to qualify the exam.",["has been trying","is been trying","have been trying","was been trying"],2,"Many of + plural → have been trying.","Previous Year","2"],
+["[Cat II, Part 2, Q104] ‘I writed a letter.’ The error is an example of ___ error.",["syntactic","morphological","thematic","punctuation"],1,"Wrong word form (past tense of write) is a morphological error.","Previous Year","2"],
+["[Cat II, Part 2, Q105] ‘ch’ in ‘chair’ is a/an ___ sound.",["nasal","affricate","plosive","bilabial"],1,"/tʃ/ is an affricate.","Previous Year","2"],
+["[Cat II, Part 2, Q106] You don’t like silk sarees, ___?",["did you","do you","won’t you","are you"],1,"Negative statement takes a positive tag.","Previous Year","2"],
+["[Cat II, Part 2, Q107] ‘I am preparing the dish.’ Rewritten without changing meaning:",["The dish is being prepared.","The dish is preparing.","The dish is being preparing.","The dish prepares."],0,"Present continuous passive: is being + V3.","Previous Year","2"],
+["[Cat II, Part 2, Q108] September 5th is ___ as Teacher’s Day.",["observing","observe","observed","observes"],2,"Passive: is observed.","Previous Year","2"],
+["[Cat II, Part 2, Q109] This can be taken as an evidence ___ the existence of dinosaurs.",["in","on","off","of"],3,"Evidence of.","Previous Year","2"],
+["[Cat II, Part 2, Q110] Cognitive theory deals with ___.",["respect","confidence","courage","mental process"],3,"Cognitivism studies mental processes such as thinking and memory.","Previous Year","2"],
+["[Cat II, Part 2, Q111] That bag is ___.",["my","her","mine","him"],2,"Possessive pronoun ‘mine’.","Previous Year","2"],
+["[Cat II, Part 2, Q112] ‘Many a girl in our class was present.’ Meaning of ‘Many a girl’:",["A girl","Many girls","The girl","Many times a girl"],1,"Many a + singular noun means many (individual) girls and takes a singular verb.","Previous Year","2"],
+["[Cat II, Part 2, Q113] ___ we have science and technology.",["At the one hand","On the one hand","For the one hand","Of the one hand"],1,"Fixed phrase: on the one hand.","Previous Year","2"],
+["[Cat II, Part 2, Q114] The ___ of the attackers is evident.",["cruelty","cruelity","cruel","cruelly"],0,"Noun: cruelty.","Previous Year","2"],
+["[Cat II, Part 2, Q115] Coming, swimming, throwing end in the sound /ŋ/, which is a/an ___ sound.",["plosive","nasal","affricate","bilabial"],1,"/ŋ/ is a velar nasal.","Previous Year","2"],
+["[Cat II, Part 2, Q116] ‘The camel is the ship of the desert’ is an example of:",["metaphor","personification","simile","metonymy"],0,"Direct comparison without ‘like’ or ‘as’.","Previous Year","2"],
+["[Cat II, Part 2, Q117] The ___ nature of the crowd upset the patience of the police officer.",["aggressioned","aggressingly","aggressiveness","aggressive"],3,"An adjective is needed before ‘nature’.","Previous Year","2"],
+["[Cat II, Part 2, Q118] I couldn’t ___ even a single word when I read that article.",["make up","put down","put up","make out"],3,"Make out = understand.","Previous Year","2"],
+["[Cat II, Part 2, Q119] ‘There is an obvious reference to the Moghuls.’ Obvious means:",["great","excellent","clear","casual"],2,"Obvious = clear.","Previous Year","2"],
+["[Cat II, Part 2, Q120] The Eiffel Tower is a remarkable ___ of engineering.",["feet","feat","feets","foot"],1,"Feat = remarkable achievement.","Previous Year","2"],
+["Passive of ‘She writes a letter.’",["A letter is written by her.","A letter was written by her.","A letter writes her.","A letter has been written by her."],0,"Simple present passive: is/am/are + V3.","Grammar","23"],
+["Passive of ‘They are building a house.’",["A house is built by them.","A house is being built by them.","A house was being built by them.","A house has been built by them."],1,"Present continuous passive: is/are + being + V3.","Grammar","23"],
+["Indirect speech: He said, “I am happy.”",["He said that he is happy.","He said that he was happy.","He said that I was happy.","He said that he had been happy."],1,"Reporting verb in the past shifts present to past: am → was.","Grammar","23"],
+["By the time we arrived, the train ___.",["left","has left","had left","leaves"],2,"An earlier past action uses the past perfect.","Grammar","23"],
+["She has been living here ___ 2010.",["for","since","from","at"],1,"Since + point in time; for + period of time.","Grammar","23"],
+["He has lived here ___ ten years.",["for","since","from","by"],0,"For + period of time.","Grammar","23"],
+["Neither of the boys ___ present.",["were","was","are","have"],1,"Neither of takes a singular verb in standard usage.","Grammar","23"],
+["Each of the students ___ a book.",["have","has","are","were"],1,"Each (of) takes a singular verb.","Grammar","23"],
+["Everyone ___ happy.",["are","were","is","have"],2,"Everyone / everybody take singular verbs.","Grammar","23"],
+["The furniture ___ new.",["are","is","were","have"],1,"Furniture is uncountable and takes a singular verb.","Grammar","23"],
+["He is ___ honest man.",["a","an","the","no article"],1,"Honest begins with a vowel sound (silent h).","Grammar","23"],
+["She is ___ European.",["a","an","the","no article"],0,"European begins with a consonant sound (yoo).","Grammar","23"],
+["I waited for ___ hour.",["a","an","the","no article"],1,"Hour begins with a vowel sound.","Grammar","23"],
+["___ Himalayas are in Asia.",["A","An","The","No article"],2,"Use ‘the’ with mountain ranges.","Grammar","23"],
+["He is ___ than me.",["tall","taller","tallest","more tall"],1,"Comparative with ‘than’.","Grammar","23"],
+["She is the ___ girl in the class.",["tall","taller","tallest","more tall"],2,"Superlative with ‘the’.","Grammar","23"],
+["Superlative of ‘good’:",["goodest","better","best","most good"],2,"Good – better – best.","Grammar","23"],
+["Plural of ‘phenomenon’:",["phenomenons","phenomena","phenomenas","phenomenae"],1,"Greek plural: phenomena.","Grammar","23"],
+["Plural of ‘criterion’:",["criterions","criteria","criterias","criterium"],1,"Greek plural: criteria.","Grammar","23"],
+["Choose the correct sentence:",["She gave me a good advice.","She gave me some good advice.","She gave me good advices.","She gave me many advice."],1,"Advice is uncountable.","Grammar","23"],
+["You are coming, ___?",["are you","aren’t you","don’t you","isn’t it"],1,"Positive statement takes a negative tag.","Grammar","23"],
+["He doesn’t like tea, ___?",["doesn’t he","does he","is he","did he"],1,"Negative statement takes a positive tag.","Grammar","23"],
+["Let us go, ___?",["will we","shall we","don’t we","won’t you"],1,"‘Let us’ takes ‘shall we’.","Grammar","23"],
+["___ it rained, we went out.",["Although","Because","Unless","Since"],0,"Although shows contrast.","Grammar","23"],
+["He speaks English ___.",["fluent","fluently","fluency","fluenter"],1,"An adverb modifies the verb.","Grammar","23"],
+["She is good ___ maths.",["in","at","on","for"],1,"Good at.","Grammar","23"],
+["He is afraid ___ dogs.",["from","of","at","with"],1,"Afraid of.","Grammar","23"],
+["They are proud ___ their school.",["of","for","at","by"],0,"Proud of.","Grammar","23"],
+["I congratulated him ___ his success.",["for","on","at","with"],1,"Congratulate someone on something.","Grammar","23"],
+["Between you and ___, this is a secret.",["I","me","my","mine"],1,"A preposition takes the objective case.","Grammar","23"],
+["If it rains, we ___ stay at home.",["will","would","had","shall have"],0,"First conditional: if + present, will + V1.","Grammar","23"],
+["If I had known, I ___ come.",["will","would","would have","had"],2,"Third conditional: if + past perfect, would have + V3.","Grammar","23"],
+["She is fond of ___.",["sing","to sing","singing","sang"],2,"A preposition is followed by a gerund.","Grammar","23"],
+["Synonym of ‘benevolent’:",["kind","cruel","lazy","proud"],0,"Benevolent = kind, well-meaning.","Vocabulary","23"],
+["Antonym of ‘ancient’:",["old","modern","historic","antique"],1,"Ancient ↔ modern.","Vocabulary","23"],
+["Synonym of ‘abundant’:",["scarce","plentiful","tiny","rare"],1,"Abundant = plentiful.","Vocabulary","23"],
+["Antonym of ‘generous’:",["kind","stingy","noble","liberal"],1,"Generous ↔ stingy.","Vocabulary","23"],
+["Antonym of ‘victory’:",["success","triumph","defeat","win"],2,"Victory ↔ defeat.","Vocabulary","23"],
+["Correct spelling:",["Acommodation","Accomodation","Accommodation","Acommodetion"],2,"Double c, double m.","Vocabulary","23"],
+["Correct spelling:",["Occurence","Occurrence","Ocurrence","Occurance"],1,"Double c, double r.","Vocabulary","23"],
+["‘Hit the nail on the head’ means:",["to say exactly the right thing","to hurt oneself","to work hard","to be angry"],0,"Idiom: to be exactly right.","Vocabulary","23"],
+["One who walks in sleep:",["Insomniac","Somnambulist","Pedestrian","Philatelist"],1,"Somnambulist = sleepwalker.","Vocabulary","23"],
+["Fear of water:",["Hydrophobia","Acrophobia","Pyrophobia","Xenophobia"],0,"Hydrophobia.","Vocabulary","23"],
+["‘The Pilgrim’s Progress’ was written by:",["Milton","Bunyan","Dryden","Defoe"],1,"John Bunyan.","Literature","3"],
+["‘Paradise Lost’ is by:",["Milton","Spenser","Pope","Donne"],0,"John Milton; an epic in blank verse.","Literature","3"],
+["‘Doctor Faustus’ is by:",["Kyd","Marlowe","Jonson","Webster"],1,"Christopher Marlowe.","Literature","3"],
+["‘The Faerie Queene’ is by:",["Spenser","Sidney","Chaucer","Langland"],0,"Edmund Spenser.","Literature","3"],
+["Which play first appeared in print in the First Folio?",["Hamlet","Macbeth","Othello","Richard III"],1,"Macbeth, The Tempest and Julius Caesar were among the 18 first printed there.","Literature","3"],
+["Chaucer wrote in:",["Old English","Middle English","Modern English","Latin"],1,"Chaucer is a Middle English poet.","Literature","3"],
+["‘Beowulf’ is written in:",["Old English","Middle English","Early Modern English","Latin"],0,"Beowulf is an Old English epic.","Literature","3"],
+["A sonnet has how many lines?",["10","12","14","16"],2,"Fourteen lines.","Literature","3"],
+["‘Lyrical Ballads’ (1798) was by Wordsworth and:",["Coleridge","Keats","Shelley","Byron"],0,"Wordsworth and Coleridge.","Literature","3"],
+["‘A Midsummer Night’s Dream’ is a:",["Tragedy","Comedy","History play","Epic"],1,"Shakespearean comedy.","Literature","3"],
+["Highest level in the revised Bloom’s taxonomy:",["Remembering","Applying","Evaluating","Creating"],3,"Remember, understand, apply, analyse, evaluate, create.","Pedagogy","3"],
+["Receptive language skills are:",["Listening and reading","Speaking and writing","Reading and writing","Listening and speaking"],0,"Productive skills are speaking and writing.","Pedagogy","3"],
+["The Grammar Translation Method focuses on:",["Oral drills","Translation and grammar rules","Immersion","Games"],1,"It teaches through rules and translation between L1 and L2.","Pedagogy","3"],
+["The Language Acquisition Device (LAD) was proposed by:",["Chomsky","Skinner","Piaget","Curran"],0,"Noam Chomsky.","Pedagogy","3"],
+["Zone of Proximal Development is associated with:",["Vygotsky","Skinner","Pavlov","Gattegno"],0,"Lev Vygotsky.","Pedagogy","3"],
+["Total Physical Response was developed by:",["James Asher","Krashen","Lozanov","Curran"],0,"James Asher: learning through commands and actions.","Pedagogy","3"],
+["Assessment carried out during the learning process is:",["Formative","Summative","Diagnostic only","Final"],0,"Formative assessment monitors progress during learning.","Pedagogy","3"],
+["Task-Based Language Teaching organises lessons around:",["Drills","Meaningful tasks","Translation","Memorising rules"],1,"Learners use language to complete real tasks.","Pedagogy","3"],
+["Plural of ‘son-in-law’:",["son-in-laws","sons-in-law","sons-in-laws","son-in-law"],1,"The first part changes in this compound: sons-in-law, runners up, passers by.","Grammar","23"],
+["Plural of ‘boy friend’:",["boys friend","boys friends","boy friends","boy friend"],2,"Second part changes: boy friends, maid servants, lady doctors, girl students.","Grammar","23"],
+["Plural of ‘Lord Justice’:",["Lord Justices","Lords Justice","Lords Justices","Lord Justice"],2,"Both parts change: Lords Justices, Men Servants, Women Servants.","Grammar","23"],
+["Many a ___ has failed.",["men","man","boys","women"],1,"Many a + singular noun + singular verb.","Grammar","23"],
+["A number of students ___ absent today.",["is","was","are","has"],2,"‘A number of’ takes a plural verb; ‘the number of’ takes a singular verb.","Grammar","23"],
+["More than two boys ___ come.",["has","have","is","was"],1,"More than two + plural noun + plural verb.","Grammar","23"],
+["To help others ___ a virtue.",["are","were","is","have"],2,"A sentence starting with ‘to’ or an -ing word takes a singular verb.","Grammar","23"],
+["Swimming ___ a good exercise.",["are","is","were","have"],1,"An -ing subject takes a singular verb.","Grammar","23"],
+["He glanced ___ the clock.",["to","in","at","for"],2,"Peep, look, stare, glance, glare, gaze + at.","Grammar","23"],
+["He is fond ___ chocolates.",["in","at","for","of"],3,"Fond + of; fondness + for.","Grammar","23"],
+["She is envious ___ her friend.",["of","for","by","at"],0,"Jealous/envious + of; jealousy/envy + for.","Grammar","23"],
+["He is senior ___ me.",["than","to","from","of"],1,"Senior, junior, superior, inferior, elder, prior + to.","Grammar","23"],
+["Smoking is injurious ___ health.",["for","of","to","at"],2,"Injurious + to.","Grammar","23"],
+["The police prohibited them ___ entering the hall.",["to","from","for","at"],1,"Prevent / prohibit + from + -ing.","Grammar","23"],
+["I look forward to ___ you.",["see","saw","seeing","seen"],2,"‘Look forward to’ takes -ing because ‘to’ is a preposition here.","Grammar","23"],
+["He insisted on ___ the book.",["buy","buying","to buy","bought"],1,"Insisted on, accustomed to, objected to + -ing.","Grammar","23"],
+["It is worth ___ the film.",["watch","to watch","watching","watched"],2,"It is no use / no good / worth / worthwhile + -ing.","Grammar","23"],
+["They avoided ___ the issue.",["discuss","to discuss","discussing","discussed"],2,"Enjoy, dislike, avoid, practise, suggest, finish, consider, miss + -ing.","Grammar","23"],
+["I heard him ___ a song.",["sang","sing","to sing","sung"],1,"After see, hear, watch, notice, feel, make, let use the base verb.","Grammar","23"],
+["He talks as if he ___ the boss.",["is","was","were","be"],2,"‘Were’ is used in unreal conditions: if / as if / as though / wish.","Grammar","23"],
+["Bangladesh, ___ neighbour is India, is a small country.",["which","who","whose","that"],2,"Countries and rivers take ‘whose’ in the sources’ rule.","Grammar","23"],
+["He is the same man ___ I met yesterday.",["who","as","whose","whom"],1,"After such and the same use ‘as’.","Grammar","23"],
+["He ran ___ to catch the bus.",["fastly","fast","fastily","fastness"],1,"‘Fast’ is already an adverb.","Grammar","23"],
+["Newton discovered ___ law of gravitation.",["a","an","the","no article"],2,"Use ‘the’ before laws and scientific inventions in these exam patterns.","Grammar","23"],
+["Would you mind ___ the window?",["close","closing","to close","closed"],1,"Would you mind + -ing.","Grammar","23"],
+["“Open the door.” is which kind of sentence?",["Assertive","Interrogative","Imperative","Exclamatory"],2,"Begins with a verb and ends with a full stop → Imperative.","Sentences","23"],
+["“What a beautiful flower!” is:",["Assertive","Interrogative","Imperative","Exclamatory"],3,"Exclamation mark → Exclamatory.","Sentences","23"],
+["“Where are you going?” is a:",["Wh question","Verbal question","Imperative","Assertive"],0,"Wh questions begin with a question word.","Sentences","23"],
+["“Are you a doctor?” is a:",["Wh question","Verbal (Yes/No) question","Exclamatory","Imperative"],1,"Begins with an auxiliary verb.","Sentences","23"],
+["Which sentence is negative?",["I have a few friends.","I have a little money.","He seldom comes late.","John will come."],2,"Seldom, hardly, scarcely, rarely, little, few are negative words.","Sentences","23"],
+["How many question words does the source list for Wh questions?",["8","10","12","14"],3,"What, which, where, when, why, who, whose, whom, how, how many, how much, how far, how long, how often.","Sentences","23"],
+["‘How often’ asks about:",["Distance","Frequency","Quantity","Duration"],1,"How often = how frequently; how far = distance; how long = duration.","Sentences","23"],
+["Fear of heights/sea: ‘Thalassophobia’ is fear of:",["Sea","Sun","Stars","Wind"],0,"Thalassophobia = sea; heliophobia = sun; siderophobia = stars; anemophobia = wind.","Vocabulary","23"],
+["Obsessive urge to steal:",["Kleptomania","Logomania","Plutomania","Graphomania"],0,"Kleptomania = stealing; logomania = talking; plutomania = riches; graphomania = writing.","Vocabulary","23"],
+["One who loves mankind:",["Misanthropist","Philanthropist","Bibliophile","Altruist"],1,"Philanthropist = lover of mankind; misanthropist = hater.","Vocabulary","23"],
+["One who mends shoes:",["Curator","Cobbler","Carnivore","Accomplice"],1,"Cobbler.","Vocabulary","23"],
+["‘Bona fide’ means:",["Good faith","Love letter","Old school","About"],0,"Bona fide = good faith; billet doux = love letter; alma mater = old school; circa = about.","Vocabulary","23"],
+["‘Prima facie’ means:",["Face to face","At first glance","That is","All together"],1,"Prima facie = at first glance; vis-à-vis = face to face; id est = that is.","Vocabulary","23"],
+["‘A close shave’ means:",["A haircut","A narrow escape","A fight","A rare event"],1,"Idiom: a narrow escape.","Vocabulary","23"],
+["‘Smell a rat’ means:",["To suspect something","To be lazy","To fail","To convince"],0,"Smell a rat = suspect something wrong.","Vocabulary","23"],
+["‘Break the ice’ means:",["To begin a conversation","To fail","To be rich","To die on duty"],0,"Break the ice = start a conversation.","Vocabulary","23"],
+["‘As gentle as a ___’:",["lamb","fox","lion","eel"],0,"Gentle–lamb, crafty–fox, fierce–lion, slippery–eel.","Vocabulary","23"],
+["‘As sweet as ___’:",["gold","honey","gospel","rock"],1,"Sweet–honey; good–gold; true–gospel; steady–rock.","Vocabulary","23"],
+["Past tense (V2) of ‘lie’ meaning to recline:",["lied","lay","laid","lain"],1,"Lie–lay–lain. Lay (to put)–laid–laid.","Vocabulary","23"],
+["Belief in God is called:",["Atheism","Theism","Agnosticism","Bureaucracy"],1,"Theism = belief in God; atheism = disbelief.","Vocabulary","23"],
+["Study of mankind:",["Astronomy","Biography","Anthropology","Calligraphy"],2,"Anthropology; astronomy is the study of stars.","Vocabulary","23"],
+["Which method uses Cuisenaire rods?",["Silent Way","Suggestopedia","CLL","ALM"],0,"Caleb Gattegno’s Silent Way.","Pedagogy","3"],
+["Which method uses relaxation and classical music?",["Silent Way","Suggestopedia","CLL","Direct Method"],1,"Georgi Lozanov’s Suggestopedia.","Pedagogy","3"],
+["In CLL the teacher acts as:",["Drill master","Counselor","Silent observer","Examiner"],1,"Charles Curran: learners are clients, teacher is counselor.","Pedagogy","3"],
+["The notional-functional syllabus is associated with:",["David Wilkins","Skinner","Gattegno","Lozanov"],0,"Wilkins is a key architect of CLT.","Pedagogy","3"],
+["Krashen’s ‘i + 1’ belongs to the:",["Monitor Hypothesis","Input Hypothesis","Natural Order","Affective Filter"],1,"Comprehensible input one step beyond the current level.","Pedagogy","3"],
+["The learned system acting as an editor is the:",["Monitor Hypothesis","Input Hypothesis","Natural Order","Acquisition–Learning"],0,"Monitor Hypothesis: learning polishes output.","Pedagogy","3"],
+["Subconscious, natural language development is called:",["Learning","Acquisition","Monitoring","Drilling"],1,"Acquisition is like L1 learning and gives fluency.","Pedagogy","3"],
+["Which step comes right after drafting in the writing process?",["Revising","Publishing","Brainstorming","Proofreading"],0,"Brainstorm → draft → revise → edit/proofread → publish.","Pedagogy","3"],
+["Reading for the main idea quickly:",["Scanning","Skimming","Intensive","Extensive"],1,"Skimming = gist.","Pedagogy","3"],
+["Close reading of short texts for grammar and detail:",["Skimming","Scanning","Intensive reading","Extensive reading"],2,"Intensive reading analyses structure and vocabulary.","Pedagogy","3"],
+["Which method bans the learner’s mother tongue?",["Direct Method","CLL","Silent Way","Suggestopedia"],0,"Direct Method uses target-language immersion.","Pedagogy","3"],
+["Behaviorist theorists include:",["Skinner and Pavlov","Krashen and Curran","Lozanov and Gattegno","Wilkins and Widdowson"],0,"Behaviorism: Pavlov, Skinner, Watson.","Pedagogy","3"],
+["Chaucer is called:",["Father of English Literature","Poet’s Poet","Sweet Swan of Avon","Moral Gower"],0,"Chaucer = Father of English Literature (also of English poetry).","Literature","3"],
+["‘Piers Plowman’ is a:",["Dream allegory","Sonnet sequence","Comedy","Essay"],0,"Middle English alliterative dream allegory by Langland.","Literature","3"],
+["‘Utopia’ was originally written in:",["English","French","Latin","Greek"],2,"Thomas More wrote it in Latin in 1516.","Literature","3"],
+["Another title of ‘Gorboduc’:",["Ferrex and Porrex","Tamburlaine","Everyman","Doctor Faustus"],0,"Sackville and Norton, 1561.","Literature","3"],
+["Blank verse is:",["Rhymed couplets","Unrhymed iambic pentameter","Free verse","Seven-line stanza"],1,"Gorboduc was the first English tragedy in blank verse.","Literature","3"],
+["Spenser’s poem for his own wedding:",["Prothalamion","Epithalamion","Amoretti","Astrophel"],1,"Epithalamion; Prothalamion was for the Somerset sisters.","Literature","3"],
+["Refrain of Prothalamion:",["Sweet Thames, run softly till I end my song","Fair field full of folk","To be or not to be","Shall I compare thee"],0,"The famous refrain of Spenser’s Prothalamion.","Literature","3"],
+["How many plays does the First Folio contain?",["18","24","36","38"],2,"36 plays, 18 of them printed for the first time.","Literature","3"],
+["‘Sweet Swan of Avon’ refers to:",["Spenser","Shakespeare","Chaucer","More"],1,"Ben Jonson’s tribute in the First Folio.","Literature","3"],
+["Hamlet’s Ghost appears on the battlements of:",["Elsinore","Verona","Venice","Athens"],0,"Elsinore Castle, Denmark.","Literature","3"],
+["“You had better ___ taking drugs.”",["stop","stops","stopping","to stop"],0,"After ‘had better’ use the base form (V1), never ‘to’.","Grammar","23"],
+["She often ___ to church.",["go","goes","is going","went"],1,"Often, usually, always, seldom, rarely etc. signal Simple Present: Sub + V1.","Grammar","23"],
+["Plural of ‘Commander-in-chief’:",["Commander-in-chiefs","Commanders-in-chief","Commanders-in-chiefs","Commander-in-chief"],1,"In such compounds only the first part changes: sons-in-law, passers by, runners up.","Grammar","23"],
+["I saw the man ___ out of the room.",["come","came","coming"],0,"After see, let, watch, keep, notice, make, hear, feel use the base verb.","Grammar","23"],
+["I prefer tea ___ coffee.",["then","than","to","or"],2,"Prefer, refer, junior, senior, inferior, superior, elder, anterior, posterior, prior, injurious take ‘to’.","Grammar","23"],
+["Would you mind ___ the letter?",["post","posts","posting","posted"],2,"Would you mind, look forward to, with a view to, objected to, insisted on, accustomed to + -ing. (Would you mind + ‘if’ takes past tense.)","Grammar","23"],
+["It was no use ___ money.",["waste","wastes","wasting","to waste"],2,"It is/was no use, no good, worth, worthwhile + -ing.","Grammar","23"],
+["Many men ___ died of pneumonia.",["has","have","is","was"],1,"Many + plural noun + plural verb; Many a + singular noun + singular verb.","Grammar","23"],
+["In recent times, the number of smokers ___ declining.",["is","are","has","have"],0,"‘The number of’ → singular verb; ‘A number of’ → plural verb.","Grammar","23"],
+["He stared ___ me.",["to","in","for","at"],3,"Peep, look, stare, glance, glare, gaze + at.","Grammar","23"],
+["This is the river Ganga ___ water is considered holy.",["which","who","whose","that"],2,"Rivers and countries take the relative pronoun ‘whose’.","Grammar","23"],
+["If I ___ a bird, I would fly.",["is","am","are","were","was"],3,"‘Were’ with I in: I wish I were, if I were, as if I were, as though I were.","Grammar","23"],
+["He is confident of ___ the match.",["win","wins","winning","won"],2,"Confident of + -ing.","Grammar","23"],
+["He is such a man ___ I respect.",["who","whom","as","whose"],2,"Such / the same are followed by ‘as’.","Grammar","23"],
+["Marconi invented ___ radio.",["a","an","the","no article"],2,"Use ‘the’ before scientific inventions.","Grammar","23"],
+["He is jealous ___ his neighbour’s wealth.",["of","for","by","with"],0,"Jealous/envious + of; jealousy/envy + for.","Grammar","23"],
+["He prevented us ___ smoking.",["at","to","from","for"],2,"Prevent / prohibit + from + -ing.","Grammar","23"],
+["Point out the error: He / ran / fastly / no error",["He","ran","fastly","no error"],2,"‘Fast’ and ‘first’ are adverbs already; there is no ‘fastly’.","Grammar","23"],
+["We live on ___ earth.",["a","an","the","no article"],3,"‘On earth’, ‘come down to earth’ take no article.","Grammar","23"],
+["More than one boy ___ come.",["has","have","are","were"],0,"More than one + singular noun + singular verb.","Grammar","23"],
+["Tell me the reason ___ you are late.",["when","where","why","what"],2,"‘Reason’ is followed by the relative pronoun ‘why’.","Grammar","23"],
+["Raju enjoys ___.",["read","to read","reading"],2,"Enjoy, dislike, avoid, practise, suggest, finish, consider, miss + -ing.","Grammar","23"],
+["“It is a wonderful opportunity.” is which kind of sentence?",["Assertive","Interrogative","Imperative","Exclamatory"],0,"Starts with subject, ends with full stop → Assertive. Verb-start + full stop → Imperative.","Sentences","23"],
+["“Can you sing a song?” is a:",["Wh question","Verbal (Yes/No) question","Imperative","Assertive"],1,"Verbal questions begin with an auxiliary verb and end with a question mark.","Sentences","23"],
+["Which is a positive word?",["Hardly","Seldom","A few","Few"],2,"‘A little’ and ‘a few’ are positive; little, few, hardly, scarcely, rarely are negative.","Sentences","23"],
+["Fear of open spaces:",["Claustrophobia","Agoraphobia","Hydrophobia","Xenophobia"],1,"One-word substitution: Agoraphobia.","Vocabulary","23"],
+["‘Baker’s dozen’ means:",["Twelve","Ten","Thirteen","A rare event"],2,"Baker’s dozen = thirteen; blue moon = a rare event.","Vocabulary","23"],
+["Past participle (V3) of ‘lie’ (to recline):",["lied","lay","lain","laid"],2,"Lie–lay–lain (recline); lie–lied–lied (tell untruth); lay–laid–laid (put).","Vocabulary","23"],
+["‘Ad hoc’ means:",["Word for word","For the special purpose","Face to face","In private"],1,"Verbatim = word for word; in camera = in private.","Vocabulary","23"],
+["Drilling and pattern practice belong to which school?",["Behaviorism","Cognitivism","Constructivism","NLP"],0,"Behaviorism (Pavlov, Skinner, Watson): language as habit formation.","Pedagogy","3"],
+["Another name for the Audio-Lingual Method:",["Silent Method","Army Method","Direct Method","Natural Method"],1,"Developed in WWII to train military personnel quickly.","Pedagogy","3"],
+["‘Information Gap’ activities are associated with:",["Grammar Translation","Structural Approach","Communicative Language Teaching","TPR"],2,"CLT: Student A has information Student B lacks.","Pedagogy","3"],
+["Which is NOT a humanistic method?",["Silent Way","Community Language Learning","Direct Method","Suggestopedia"],2,"Direct Method bans L1 and uses immersion; humanistic methods reduce anxiety.","Pedagogy","3"],
+["CLT is mainly credited to:",["Gattegno &amp; Lozanov","Wilkins &amp; Widdowson","Curran &amp; Krashen","Skinner &amp; Pavlov"],1,"Gattegno = Silent Way; Lozanov = Suggestopedia; Curran = CLL; Krashen = Natural Approach.","Pedagogy","3"],
+["Checking spelling and punctuation in a draft is:",["Brainstorming","Outlining","Editing / Proofreading","Free writing"],2,"Process: brainstorm → draft → revise → edit/proofread → publish.","Pedagogy","3"],
+["Searching a text quickly for a date or name:",["Skimming","Scanning","Intensive reading","Critical reading"],1,"Scanning = specific details; skimming = gist.","Pedagogy","3"],
+["Reading a novel for pleasure is:",["Intensive","Extensive","Scanning","Critical"],1,"Extensive reading: pleasure and general comprehension.","Pedagogy","3"],
+["Grammatical structures acquired in a predictable order:",["Input Hypothesis","Affective Filter","Natural Order Hypothesis","Monitor Hypothesis"],2,"Krashen’s Natural Order Hypothesis.","Pedagogy","3"],
+["Acquisition is best when the affective filter is:",["High","High stress, low motivation","Low (low anxiety, high motivation)","Neutral"],2,"Low anxiety + high motivation lowers the filter. Input hypothesis is i + 1.","Pedagogy","3"],
+["Chaucer’s ‘Troilus and Criseyde’ is dedicated to:",["John of Gaunt","Gower and Strode","Langland and Wycliffe","Richard II"],1,"‘O moral Gower … philosophical Strode.’","Literature","3"],
+["Rhyme Royal rhymes:",["ABABBCC","ABBA","AABB","ABCABC"],0,"Seven-line iambic pentameter stanza introduced by Chaucer.","Literature","3"],
+["‘Fair field full of folk’ is from:",["Canterbury Tales","Piers Plowman","Pilgrim’s Progress","Utopia"],1,"William Langland; Alliterative Revival dream allegory.","Literature","3"],
+["Length of the workday in More’s Utopia (1516):",["6 hours","8 hours","10 hours","12 hours"],0,"Six hours a day: 3 before noon, 3 after.","Literature","3"],
+["Gorboduc (1561), first English blank verse tragedy, by Sackville and:",["Thomas Kyd","Thomas Norton","Marlowe","Ben Jonson"],1,"Also called Ferrex and Porrex.","Literature","3"],
+["Spenser’s ‘Prothalamion’ celebrates the wedding of:",["Elizabeth &amp; Katherine Somerset","Mary &amp; Anne Boleyn","Penelope &amp; Dorothy Devereux","Rosalind &amp; Celia"],0,"Daughters of the Earl of Worcester. Epithalamion was for Spenser’s own wedding.","Literature","3"],
+["The First Folio (1623) was compiled by:",["Rowe &amp; Warburton","Heminge &amp; Condell","Blount &amp; Jaggard","Jonson &amp; Dekker"],1,"36 plays; 18 were printed for the first time.","Literature","3"],
+["‘Something is rotten in the state of Denmark’ is said by:",["Hamlet","Horatio","Marcellus","Claudius"],2,"Act 1, Scene 4, after the Ghost appears.","Literature","3"],
+["Who called Spenser ‘The Poet’s Poet’?",["Coleridge","Charles Lamb","Hazlitt","Arnold"],1,"Charles Lamb.","Literature","3"],
+["‘He was not of an age, but for all time!’ was written by:",["Dryden","Ben Jonson","Samuel Johnson","Pope"],1,"From Jonson’s tribute in the First Folio.","Literature","3"]
+];
+var V={
+"Similes":"cool=cucumber|dry=bone|fat=pig|gentle=lamb|good=gold|harmless=dove|hot=fire|old=hills|light=feather|quiet=mouse|safe=house|silent=grave|sober=judge|steady=rock|straight=arrow|sweet=honey|true=gospel|crafty=fox|fierce=lion|slippery=eel",
+"Foreign words":"Ad lib=without preparation|Ab initio=from the beginning|Ad hoc=for the special purpose|Ad verbum / Verbatim=word for word|Alma mater=old school|Au courant=well informed|Bona fide=good faith|Billet doux=love letter|Boutique=small shop selling latest fashion|Circa=about|Et al=and others|Modus vivendi=way of living|Mutatis mutandis=with necessary changes|Rapport=harmonious relationship|Tête-à-tête=private conversation|Vox populi=voice of the people|En masse=all together|En route=on the way|Faux pas=social blunder|Impasse=deadlock|Vis-à-vis=face to face|Prima facie=at first glance|Id est=that is|Locus standi=right to appear in court|In camera=in private",
+"Phobia":"Bed=Clinophobia|Animal=Zoophobia|Ice=Cryophobia|Heat=Thermophobia|Bees=Apiphobia|Children=Paedophobia|Drugs=Pharmacophobia|Flowers=Anthophobia|Food=Cibophobia|Light=Photophobia|Marriage=Gametophobia|Money=Chrematophobia|Waves=Cymophobia|Wind=Anemophobia|Sun=Heliophobia|Stars=Siderophobia|Sea=Thalassophobia|People=Anthropophobia|Pain=Algophobia|Places=Topophobia|Sleep=Hypnophobia|Poison=Toxiphobia|Open spaces=Agoraphobia",
+"Mania":"Eating=Phagomania|Work=Ergomania|Riches=Plutomania|Stealing=Kleptomania|Talking=Logomania|Writing=Graphomania|Water=Hydromania|Words=Verbomania|Idols=Idolomania|Dead bodies=Necromania|Drugs=Narcomania",
+"Idioms":"Baker’s dozen=thirteen|Blue moon=a rare event|In a fix=in difficulty|In the bag=certain|Kith and kin=near relatives|Dry run=rehearsal|A close shave=narrow escape|Top brass=VIPs|Red-handed=on the spot|Small fry=unimportant person|Slow coach=lazy one|Smell a rat=suspect something|Man of letters=a scholar|Man of straw=worthless man|Moot point=undecided matter|Fair sex=women in general|Bosom friend=intimate friend|An axe to grind=selfish motive|Break the ice=begin conversation|Bring home=convince|End in smoke=fail|Die in harness=die on duty|In vogue=fashionable|Well off=rich",
+"One word":"Partner in crime=Accomplice|List of matters for a meeting=Agenda|Money paid to wife on separation=Alimony|Sworn written declaration=Affidavit|Belief in God=Theism|Disbelief in God=Atheism|Study of mankind=Anthropology|Government through officers=Bureaucracy|Lover of mankind=Philanthropist|Hater of mankind=Misanthropist|Lover of books=Bibliophile|Speaking two languages=Bilingual|Easily believing others=Credulous|One who lives on flesh=Carnivorous|Living at the same time=Contemporary|In charge of a museum=Curator|Beautiful handwriting=Calligraphy|Want of rain=Drought|Confusing situation=Dilemma"
+};
+var N=[
+["Verb patterns (-ing / base / to)","<ul><li><b>Base verb (V1):</b> had better; see, let, watch, keep, notice, make, hear, feel + object.</li><li><b>-ing:</b> would you mind, look forward to, with a view to, objected to, insisted on, accustomed to; it is no use / no good / worth / worthwhile; confident of; prevent/prohibit from; enjoy, dislike, avoid, practise, suggest, finish, consider, miss.</li><li>Would you mind <b>if</b> + past tense (Would you mind if I went out).</li><li>A sentence starting with ‘to’ or an -ing word takes a singular verb.</li></ul>","23"],
+["Subject–verb agreement","<ul><li>Many + plural noun + plural verb. Many a + singular noun + singular verb.</li><li>The number of → singular. A number of → plural.</li><li>More than one + singular noun + singular verb. More than two + plural noun + plural verb.</li></ul>","23"],
+["Plurals of compound nouns","<ul><li><b>First part changes:</b> commanders-in-chief, sons-in-law, passers by, lookers on, hangers on, runners up, men-of-war.</li><li><b>Second part changes:</b> boy friends, maid servants, man eaters, lady doctors, girl students, mouthfuls, grown ups, pick pockets.</li><li><b>Both parts change:</b> Lords Justices, Men Servants, Women Servants.</li></ul>","23"],
+["Prepositions &amp; relatives","<ul><li>+ to: prefer, refer, junior, senior, inferior, superior, elder, anterior, posterior, prior, injurious.</li><li>+ at: peep, look, stare, glance, glare, gaze.</li><li>Jealous/envious of; jealousy/envy for; fond of; fondness for. Sympathy for; sympathetic to; sympathised with.</li><li>Rivers, countries → whose. Reason → why. Such / the same → as.</li><li>Articles: the + scientific inventions; no article in ‘on earth’.</li><li>‘I were’: I wish I were, if I were, as if I were, as though I were.</li></ul>","23"],
+["Sentence types","<ul><li><b>Assertive:</b> subject … full stop (statement; affirmative or negative).</li><li><b>Interrogative:</b> ends with ?. Wh questions begin with what, which, where, when, why, who, whose, whom, how, how many/much/far/long/often. Verbal (Yes/No) questions begin with an auxiliary.</li><li><b>Imperative:</b> begins with a verb, ends with a full stop (Get out).</li><li><b>Exclamatory:</b> has an exclamation mark.</li><li>Negative words: no, not, nothing, neither, nor, never, nobody, none, hardly, scarcely, barely, rarely, seldom, little, few. <i>A little</i> and <i>a few</i> are positive.</li></ul>","23"],
+["Methods &amp; approaches","<ul><li><b>Audio-Lingual (Army Method):</b> behaviorist, drills, habit formation.</li><li><b>CLT:</b> Wilkins, Widdowson; information gap; meaning over form.</li><li><b>Silent Way:</b> Gattegno (Cuisenaire rods). <b>Suggestopedia:</b> Lozanov (relaxation, music). <b>CLL:</b> Curran (counselor-teacher).</li><li>Direct Method is not humanistic; it bans L1.</li></ul>","3"],
+["Krashen’s five hypotheses","<ol><li>Acquisition–Learning</li><li>Natural Order</li><li>Monitor</li><li>Input (i + 1)</li><li>Affective Filter (must be low: low anxiety, high motivation)</li></ol>","3"],
+["Reading &amp; writing","<ul><li>Skimming = gist; Scanning = specific detail; Intensive = close study of short texts; Extensive = pleasure reading of long texts.</li><li>Writing process: Brainstorming → Drafting → Revising → Editing/Proofreading → Publishing.</li></ul>","3"],
+["Literature quick facts","<ul><li>Chaucer: Troilus and Criseyde, Rhyme Royal (ababbcc), dedicated to Gower and Strode.</li><li>Langland: Piers Plowman, Alliterative Revival, ‘Fair field full of folk’.</li><li>More: Utopia (1516, Latin), 6-hour workday.</li><li>Sackville &amp; Norton: Gorboduc (1561), first blank verse tragedy.</li><li>Spenser: Prothalamion (Somerset sisters), Epithalamion, Spenserian stanza; ‘Poet’s Poet’ (Lamb).</li><li>First Folio 1623: Heminge &amp; Condell, 36 plays, 18 new. Jonson: ‘Sweet Swan of Avon’.</li><li>Marcellus: ‘Something is rotten in the state of Denmark’.</li></ul>","3"]
+];
+var S={cat:"3",tab:"quiz",topic:"All",qi:0,list:[],score:0,done:0,picked:null,vc:"Similes",ci:0,flip:false,deck:[]};
+function $(i){return document.getElementById(i)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function btn(label,cls,fn){return '<button class="'+cls+'" onclick="'+fn+'">'+label+'</button>'}
+function topics(){var t=["All"];Q.forEach(function(q){if(q[5].indexOf(S.cat)>-1&&q[4]!="Previous Year"&&t.indexOf(q[4])<0)t.push(q[4])});return t}
+function build(){S.list=shuffle(Q.filter(function(q){return q[5].indexOf(S.cat)>-1&&(S.tab=="pyq")==(q[4]=="Previous Year")&&(S.topic=="All"||q[4]==S.topic)}));S.qi=0;S.score=0;S.done=0;S.picked=null}
+function setCat(c){S.cat=c;S.topic="All";build();buildDeck();render()}
+function setTab(t){S.tab=t;S.topic="All";build();render()}
+function setTopic(t){S.topic=t;build();render()}
+function pick(i){if(S.picked!==null)return;S.picked=i;S.done++;if(i==S.list[S.qi][2])S.score++;render()}
+function next(){S.qi++;S.picked=null;render()}
+function buildDeck(){S.deck=shuffle(V[S.vc].split("|"));S.ci=0;S.flip=false}
+function setVc(v){S.vc=v;buildDeck();render()}
+function flip(){S.flip=!S.flip;render()}
+function nextCard(d){S.ci=(S.ci+d+S.deck.length)%S.deck.length;S.flip=false;render()}
+function reshuffle(){buildDeck();render()}
+function render(){
+ $("cat").innerHTML=btn("Category 3 (Primary teachers: Pedagogy + Literature)",S.cat=="3"?"on":"","setCat('3')")+btn("Category 2",S.cat=="2"?"on":"","setCat('2')");
+ $("tabs").innerHTML=[["quiz","Practice"],["pyq","Previous Year"],["cards","Vocabulary"],["notes","Notes"]].map(function(t){return btn(t[1],S.tab==t[0]?"on":"","setTab('"+t[0]+"')")}).join("");
+ var h="";
+ if(S.tab=="quiz"||S.tab=="pyq"){
+  h+='<div class="row">'+(S.tab=="pyq"?'<span class="tag">Previous year papers. Answers were worked out by me, so please check them against the official key.</span>':'<select onchange="setTopic(this.value)">'+topics().map(function(t){return '<option'+(t==S.topic?' selected':'')+'>'+t+'</option>'}).join("")+'</select>')+btn("Restart","","build();render()")+'</div>';
+  if(!S.list.length){h+='<div class="card">No previous year questions added for this category yet. Switch to Category 2.</div>'}else if(S.qi>=S.list.length){h+='<div class="card"><h2>Finished</h2><p>Score: <b>'+S.score+' / '+S.list.length+'</b> ('+Math.round(100*S.score/Math.max(1,S.list.length))+'%)</p>'+btn("Try again","on","build();render()")+'</div>'}
+  else{var q=S.list[S.qi];
+   h+='<div class="tag">Question '+(S.qi+1)+' of '+S.list.length+' · '+q[4]+' · Score '+S.score+'/'+S.done+'</div><div class="bar"><i style="width:'+(100*S.qi/S.list.length)+'%"></i></div><div class="card"><b>'+q[0].replace("Cat II, Part 2","Cat II, Feb 2019, Part 2")+'</b>';
+   q[1].forEach(function(o,i){var c="opt";if(S.picked!==null){if(i==q[2])c+=" ok";else if(i==S.picked)c+=" no"}h+='<button class="'+c+'" onclick="pick('+i+')">'+o+'</button>'});
+   if(S.picked!==null)h+='<div class="exp">'+(S.picked==q[2]?"Correct. ":"Not quite. ")+q[3]+'</div><div class="row">'+btn(S.qi+1<S.list.length?"Next":"See score","on","next()")+'</div>';
+   h+='</div>'}
+ }else if(S.tab=="cards"){
+  h+='<div class="row"><select onchange="setVc(this.value)">'+Object.keys(V).map(function(k){return '<option'+(k==S.vc?' selected':'')+'>'+k+'</option>'}).join("")+'</select>'+btn("Shuffle","","reshuffle()")+'</div>';
+  var p=S.deck[S.ci].split("="),isSim=S.vc=="Similes";
+  var front=isSim?"As "+p[0]+" as …":p[0],back=isSim?"As "+p[0]+" as "+(/^[aeiou]/i.test(p[1])?"an ":"a ")+p[1]:p[1];
+  h+='<div class="tag">Card '+(S.ci+1)+' of '+S.deck.length+' · tap to flip</div><div class="card fc" onclick="flip()">'+(S.flip?"<b>"+back+"</b>":front)+'</div><div class="row">'+btn("Previous","","nextCard(-1)")+btn("Next","on","nextCard(1)")+'</div>';
+ }else{
+  N.filter(function(n){return n[2].indexOf(S.cat)>-1}).forEach(function(n){h+='<details><summary>'+n[0]+'</summary>'+n[1]+'</details>'});
+ }
+ $("view").innerHTML=h;
+}
+build();buildDeck();render();
+</script></body></html>
